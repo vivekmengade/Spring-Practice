@@ -6,7 +6,7 @@
 
     <!-- bean definitions here -->
     
-    <bean class="com.DependencyInjection.Address" name="a1" >
+    <!-- <bean class="com.DependencyInjection.Address" name="a1" >
     <property name="cname" value="Mengadewadi"></property>
     <property name="laneNo" value="3"></property>
     </bean>
@@ -17,7 +17,10 @@
     <property name="id" value="101" ></property>
     <property name="add" ref="a1" ></property>
     
-    </bean>
+    </bean> -->
+    <bean class="com.DependencyInjection.Address" name="a1" p:cname="mengadewadi" p:laneNo="5" />
+    <bean class="com.DependencyInjection.Student" name="s1" p:name="Vivek" p:id="1001" p:add-ref="a1"/>
+    
     
     
 </beans>
