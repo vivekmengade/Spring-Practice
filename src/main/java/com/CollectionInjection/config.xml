@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    
+    <!-- List -->
+    <bean class="com.CollectionInjection.Vehicle" name="V1" >
+    	<property name="cname"> 
+    		<list>
+    			<value>Swift</value>
+    			<value>Creata</value>
+    			<value>Rubicorn</value>
+    			<value>Nexon</value>
+    			<null></null>
+    		</list>
+    	</property>
+    	<property name="price">
+    		<set>
+    			<value>1000000</value>
+    			<value>2300000</value>
+    			<value>4500000</value>
+    			<value>2700000</value>
+    			<null></null>
+    		</set>
+    	</property>
+    	<property name="data">
+    		<map>
+    			<entry key="TATA" value="Nexon"></entry>
+    			<entry key="HYUNDAI" value="Create"></entry>
+    			<entry key="JEEP" value="Rubicorn" ></entry>
+    			<entry key="SUZUKI" value="Swift" ></entry>
+    		</map>
+    	</property>
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</beans>
